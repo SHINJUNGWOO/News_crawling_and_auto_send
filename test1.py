@@ -18,9 +18,8 @@ class news_crawler:
         self.result=self.soup.select("title")
 
         for result in self.result:
-            self.full_string+=(result.string+"\n")
+            self.full_string+=(result.string+"\n\n")
 
-        print(self.full_string)
 
 
 a=news_crawler()
